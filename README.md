@@ -1,2 +1,2 @@
-# Noise's Big Break FANMADE
- this is an FANMADE version of Noise's Big Break.
+# Pizza Tower: Noise's Big Break
+A recreation of the Noise spinoff seen in the Pizza Tower "Megaleak"

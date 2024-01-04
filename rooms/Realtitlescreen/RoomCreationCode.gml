@@ -1,0 +1,1 @@
+gameframe_caption_text = "The Big Break of the Noise"
