@@ -37,6 +37,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Misc or Idfk where to put this","order":1,"path":"folders/Sprites/backgrounds/Misc or Idfk where to put this.yy",},
     {"name":"fonts","order":16,"path":"folders/Sprites/fonts.yy",},
+    {"name":"Tilesets","order":17,"path":"folders/Sprites/Tilesets.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_mammoncube","order":8,"path":"objects/obj_mammoncube/obj_mammoncube.yy",},

@@ -51,6 +51,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Misc or Idfk where to put this","folderPath":"folders/Sprites/backgrounds/Misc or Idfk where to put this.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"fonts","folderPath":"folders/Sprites/fonts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tilesets","folderPath":"folders/Sprites/Tilesets.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"FFMediaToolkit.dll","CopyToMask":-1,"filePath":"datafiles",},
@@ -216,6 +217,7 @@
     {"id":{"name":"obj_doorX","path":"objects/obj_doorX/obj_doorX.yy",},},
     {"id":{"name":"spr_poster","path":"sprites/spr_poster/spr_poster.yy",},},
     {"id":{"name":"GMLive_program","path":"scripts/GMLive_program/GMLive_program.yy",},},
+    {"id":{"name":"tile_test","path":"tilesets/tile_test/tile_test.yy",},},
     {"id":{"name":"spr_player_mach2","path":"sprites/spr_player_mach2/spr_player_mach2.yy",},},
     {"id":{"name":"objNekoPresenceDemo","path":"objects/objNekoPresenceDemo/objNekoPresenceDemo.yy",},},
     {"id":{"name":"spr_player_glidejumpstart","path":"sprites/spr_player_glidejumpstart/spr_player_glidejumpstart.yy",},},
@@ -296,6 +298,7 @@
     {"id":{"name":"sfx_slide","path":"sounds/sfx_slide/sfx_slide.yy",},},
     {"id":{"name":"GMLive_noDeactivate","path":"scripts/GMLive_noDeactivate/GMLive_noDeactivate.yy",},},
     {"id":{"name":"spr_destroyable","path":"sprites/spr_destroyable/spr_destroyable.yy",},},
+    {"id":{"name":"tilespr_test","path":"sprites/tilespr_test/tilespr_test.yy",},},
     {"id":{"name":"GMLive_http","path":"scripts/GMLive_http/GMLive_http.yy",},},
     {"id":{"name":"GMLive_parser","path":"scripts/GMLive_parser/GMLive_parser.yy",},},
     {"id":{"name":"spr_debris","path":"sprites/spr_debris/spr_debris.yy",},},
