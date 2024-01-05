@@ -1,0 +1,1 @@
+text = "Press X to skip"

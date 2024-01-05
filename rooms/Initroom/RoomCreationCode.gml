@@ -1,1 +1,1 @@
-room_goto(Realtitlescreen);
+room_goto(rm_intro);
