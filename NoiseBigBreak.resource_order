@@ -132,7 +132,6 @@
     {"name":"spr_destroyable","order":11,"path":"sprites/spr_destroyable/spr_destroyable.yy",},
     {"name":"GMLive_parser","order":4,"path":"scripts/GMLive_parser/GMLive_parser.yy",},
     {"name":"spr_debris","order":12,"path":"sprites/spr_debris/spr_debris.yy",},
-    {"name":"Note","order":16,"path":"notes/Note/Note.yy",},
     {"name":"GMLive_thread","order":4,"path":"scripts/GMLive_thread/GMLive_thread.yy",},
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_gmlive","order":4,"path":"objects/obj_gmlive/obj_gmlive.yy",},
