@@ -1,5 +1,9 @@
-active = false;
+/// @description Initialize Discord.
 
-if !np_initdiscord(string(1192170986657816600), true, np_steam_app_id_empty)
+#macro DISCORD_APP_ID "1192170986657816600"
+
+ready = false;
+if (!np_initdiscord(DISCORD_APP_ID, true, np_steam_app_id_empty))
 {
+	//show_error("NekoPresence init fail.", true);
 }

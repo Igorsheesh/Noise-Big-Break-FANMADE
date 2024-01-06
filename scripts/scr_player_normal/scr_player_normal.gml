@@ -99,7 +99,7 @@ function scr_player_normal() {
 			else if movespeed < 19
 				movespeed = Approach(movespeed, 19, 0.01);
 		}
-		scr_player_addslopemomentum(0.08, 0.04); //Why is this a variable - classic loypoll move
+		//scr_player_addslopemomentum(0.08, 0.04); //Commented out because it's a non-existant function
 	}
 
 	if input_buffer_jump

@@ -15,6 +15,14 @@ enum states
 }
 #macro mach2_time 30
 
+key_left = false;
+key_right = false;
+key_up = false;
+key_down = false;
+key_down2 = false;
+key_jump = false;
+key_jump2 = false;
+move = key_left + key_right;
 depth = -6;
 hp = 4;
 image_speed = 0.35;
