@@ -459,9 +459,3 @@ if mouse_check_button_pressed(mb_left)
 	x = mouse_x;
 	y = mouse_y;
 }
-if keyboard_key_press(vk_alt)
-{
-	image_index = spr_playerJ
-	sprite_index = spr_playerJ
-	spd = 25
-}

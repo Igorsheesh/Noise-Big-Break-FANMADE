@@ -89,4 +89,7 @@ set_machsnd = function(sound)
 	}
 	else
 		machsnd = noone;
+} if keyboard_check("7")
+{
+	// add here so debug blocks will be invisible
 }
