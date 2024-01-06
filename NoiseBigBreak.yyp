@@ -72,7 +72,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"obj_mammoncube","path":"objects/obj_mammoncube/obj_mammoncube.yy",},},
@@ -102,6 +102,7 @@
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
     {"id":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},},
     {"id":{"name":"obj_doorX","path":"objects/obj_doorX/obj_doorX.yy",},},
+    {"id":{"name":"scr_player_gameover","path":"scripts/scr_player_gameover/scr_player_gameover.yy",},},
     {"id":{"name":"spr_poster","path":"sprites/spr_poster/spr_poster.yy",},},
     {"id":{"name":"GMLive_program","path":"scripts/GMLive_program/GMLive_program.yy",},},
     {"id":{"name":"tile_test","path":"tilesets/tile_test/tile_test.yy",},},

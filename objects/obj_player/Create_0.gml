@@ -10,7 +10,8 @@ enum states
 	wallslide,
 	bounce,
 	actor,
-	hitstun
+	hitstun,
+	dead
 }
 #macro mach2_time 30
 
@@ -57,7 +58,7 @@ scr_hurtplayer = function()
 	
 	hp--;
 	if hp <= 0
-		instance_destroy();
+		scr_player_gameover();
 	
 	sound_play_3d(sfx_hurt, x, y);
 	grounded = false;

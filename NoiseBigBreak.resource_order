@@ -62,6 +62,7 @@
     {"name":"GMLiveAPI","order":3,"path":"scripts/GMLiveAPI/GMLiveAPI.yy",},
     {"name":"obj_collect","order":5,"path":"objects/obj_collect/obj_collect.yy",},
     {"name":"obj_doorX","order":2,"path":"objects/obj_doorX/obj_doorX.yy",},
+    {"name":"scr_player_gameover","order":6,"path":"scripts/scr_player_gameover/scr_player_gameover.yy",},
     {"name":"GMLive_program","order":3,"path":"scripts/GMLive_program/GMLive_program.yy",},
     {"name":"spr_player_mach2","order":3,"path":"sprites/spr_player_mach2/spr_player_mach2.yy",},
     {"name":"objNekoPresenceDemo","order":4,"path":"objects/objNekoPresenceDemo/objNekoPresenceDemo.yy",},

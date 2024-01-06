@@ -2,7 +2,7 @@
   "resourceType": "GMExtension",
   "resourceVersion": "1.2",
   "name": "NekoPresence",
-  "androidactivityinject": null,
+  "androidactivityinject": "",
   "androidclassname": "",
   "androidcodeinjection": "",
   "androidinject": "",
@@ -13,12 +13,12 @@
   "author": "",
   "classname": "",
   "copyToTargets": 192,
-  "date": "2020-11-11T11:13:31.2571444+01:00",
+  "date": "2020-11-11T10:13:31.2571444+00:00",
   "description": "",
   "exportToGame": true,
   "extensionVersion": "1.2.0",
   "files": [
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":192,"filename":"NekoPresence.gml","final":"","functions":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"NekoPresence.gml","constants":[],"copyToTargets":192,"filename":"NekoPresence.gml","final":"","functions":[
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"np_get_avatar_url","argCount":0,"args":[
             1,
             1,
@@ -26,7 +26,7 @@
       ],"init":"","kind":2,"order":[
         {"name":"np_get_avatar_url","path":"extensions/NekoPresence/NekoPresence.yy",},
       ],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"NekoPresence.dll","constants":[
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"np_steam_app_id","hidden":false,"value":"string(steam_get_app_id())",},
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"np_steam_app_id_empty","hidden":false,"value":"\"0\"",},
         {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"DISCORD_REPLY_NO","hidden":false,"value":"0",},
