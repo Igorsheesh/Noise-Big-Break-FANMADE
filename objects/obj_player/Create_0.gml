@@ -58,7 +58,7 @@ scr_hurtplayer = function()
 	
 	hp--;
 	if hp <= 0
-		scr_player_gameover();
+		scr_playerreset();
 	
 	sound_play_3d(sfx_hurt, x, y);
 	grounded = false;

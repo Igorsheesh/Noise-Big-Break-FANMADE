@@ -1,5 +1,6 @@
 // Prevents Noisette crash
-function scr_player_gameover() {
+function scr_playerreset() {
+	trace("playerreset");
 	instance_destroy(obj_noisette);
 	with obj_player {
 		state = states.dead;
