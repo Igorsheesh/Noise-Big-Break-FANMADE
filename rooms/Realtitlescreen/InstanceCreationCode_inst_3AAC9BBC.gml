@@ -1,1 +1,1 @@
-text = "Press K to begin!"
+text = "Press Z to begin!"
