@@ -1,4 +1,5 @@
 function scr_player_normal() {
+	var idlespr = spr_player_idle
 	hsp = xscale * movespeed;
 	
 	if (place_meeting(x + sign(hsp), y, obj_solid) or scr_solid_slope(x + sign(hsp), y))
@@ -155,5 +156,6 @@ function scr_player_normal() {
 		state = states.slide;
 		sprite_index = spr_player_crouchslip;
 	}
-		
+		if keyboard_check(vk_f3)
+		idlespr = spr_playerJ
 }
