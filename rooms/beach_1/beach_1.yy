@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "beach_1",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/beach_1/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -93,7 +93,7 @@
 324,317,318,319,320,321,322,323,324,317,318,319,320,321,322,323,324,317,318,319,-43,-2147483648,114,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,372,373,374,375,376,369,370,371,-43,-2147483648,114,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,
 423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,424,425,426,427,428,421,422,423,-43,-2147483648,-23,0,-8,-2147483648,80,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,
 270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,265,266,267,268,269,270,271,272,-46,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tile_junkbeach","path":"tilesets/tile_junkbeach/tile_junkbeach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4283256141,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "Junk Beach",

@@ -38,7 +38,7 @@ function scr_player_slide() {
 				vsp = -14;
 				jumpclouds = 12;
 			}
-			//scr_player_addslopemomentum(0.4, 0.2); //Non-existant function
+			scr_player_addslopemomentum(0.4, 0.2);
 		}
 	}
 	else if place_meeting(x + sign(hsp), y, obj_solid) && !place_meeting(x + hsp, y, obj_destroyable)

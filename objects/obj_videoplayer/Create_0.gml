@@ -1,9 +1,9 @@
 video = video_open("Intro.mp4")
-video_enable_loop(false)
-
-
-
-
+if video_status_closed
+	{	
+		room_goto(Realtitlescreen)
+		instance_destroy()
+	}
 
 
 
