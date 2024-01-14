@@ -132,7 +132,7 @@ if mouse_check_button_pressed(mb_left) // makes player teleport to the spot wher
 	x = mouse_x;
 	y = mouse_y;
 }
-if keyboard_check(vk_f1) // makes debug objects invisible
+/*if keyboard_check(vk_f1) // makes debug objects invisible
 {
 	obj_solid.visible = false;
 	obj_slope.visible = false;
