@@ -1,5 +1,3 @@
-live_auto_call
-
 if !keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) {
 	ds_list_clear(global.saveroom);
 	event_perform(ev_create, 0);

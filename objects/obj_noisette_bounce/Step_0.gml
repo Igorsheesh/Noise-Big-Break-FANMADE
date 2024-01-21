@@ -1,5 +1,3 @@
-live_auto_call
-
 event_inherited();
 switch state {
 	case 1:

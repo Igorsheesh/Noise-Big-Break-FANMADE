@@ -1,5 +1,3 @@
-live_auto_call
-
 enum states {
 	normal,
 	mach,

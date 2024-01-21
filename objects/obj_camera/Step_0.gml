@@ -1,5 +1,3 @@
-live_auto_call
-
 var target = obj_player;
 
 if instance_exists(target) {

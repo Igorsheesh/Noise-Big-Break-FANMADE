@@ -3,7 +3,7 @@ function create_particle(x, y, sprite, xscale = 1) {
 		array_push(particles, {
 			x: x,
 			y: y,
-			sprite: sprite,
+			sprite_index: sprite,
 			image_index: 0,
 			image_speed: sprite_get_speed(sprite),
 			xscale: xscale,

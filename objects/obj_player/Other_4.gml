@@ -1,5 +1,3 @@
-live_auto_call
-
 var door_obj = noone;
 with obj_doorX {
 	if door == other.targetDoor {

@@ -1,1 +1,1 @@
-text = "Early Development Build"
+text = "Early Development Build";
