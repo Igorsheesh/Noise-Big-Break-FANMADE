@@ -12,5 +12,5 @@ function scr_hurtplayer() {
 	hsp = xscale * -6;
 	vsp = -10;
 	state = states.hurt;
-	sprite_index = spr_player_hurt;
+	sprite_index = spr_hurt;
 }

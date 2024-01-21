@@ -14,7 +14,7 @@ function scr_player_wallslide() {
 	vsp = min(vsp, 8);
 	
 	if !place_meeting(x + xscale, y, obj_solid) || move == -xscale {
-		sprite_index = spr_player_fall;
+		sprite_index = spr_fall;
 		image_index = 0;
 		state = states.jump;
 	}
@@ -25,7 +25,7 @@ function scr_player_wallslide() {
 		xscale *= -1;
 		movespeed = 10;
 		state = states.jump;
-		sprite_index = spr_player_bounce;
+		sprite_index = spr_bounce;
 		vsp = -14;
 	}
 	

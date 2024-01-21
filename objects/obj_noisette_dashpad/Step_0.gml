@@ -4,7 +4,7 @@ event_inherited();
 switch state {
 	case 1:
 		player.state = states.actor;
-		player.sprite_index = spr_player_mach1;
+		player.sprite_index = spr_mach1;
 		player.image_index = 0;
 		player.hsp = 0;
 		player.vsp = 0;

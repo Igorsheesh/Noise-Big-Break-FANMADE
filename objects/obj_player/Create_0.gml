@@ -40,6 +40,7 @@ mach2 = 0;
 jumpstop = false;
 inv = 0;
 character = "N";
+scr_characterspr();
 
 input_buffer_jump = 0;
 

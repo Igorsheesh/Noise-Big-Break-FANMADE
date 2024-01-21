@@ -4,11 +4,11 @@ function scr_player_slide() {
 		movespeed = 0;
 	
 	if grounded {
-		if sprite_index == spr_player_dive {
+		if sprite_index == spr_dive {
 			sound_play_3d(sfx_land, x, y);
 			
 			state = states.normal;
-			sprite_index = spr_player_runland;
+			sprite_index = spr_runland;
 			image_index = 0;
 		}
 		else {
@@ -27,7 +27,7 @@ function scr_player_slide() {
 				create_particle(x, y, spr_highjumpcloud2);
 			
 				jumpstop = false;
-				sprite_index = spr_player_longjump;
+				sprite_index = spr_longjump;
 				image_index = 0;
 				state = states.jump;
 				vsp = -14;

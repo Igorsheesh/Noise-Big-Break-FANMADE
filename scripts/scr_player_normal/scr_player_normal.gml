@@ -1,5 +1,5 @@
 function scr_player_normal() {
-	var idlespr = spr_player_idle
+	var idlespr = spr_idle
 	hsp = xscale * movespeed;
 	
 	if (place_meeting(x + sign(hsp), y, obj_solid) or scr_solid_slope(x + sign(hsp), y)) && (!place_meeting(x + hsp, y, obj_destroyable) || movespeed <= 12) {
@@ -8,7 +8,7 @@ function scr_player_normal() {
 			sound_play_3d(sfx_wallslide, x, y);
 		
 			state = states.wallslide;
-			sprite_index = spr_player_wallslide;
+			sprite_index = spr_wallslide;
 			grounded = false;
 			movespeed = 0;
 			
@@ -17,30 +17,30 @@ function scr_player_normal() {
 		movespeed = 0;
 	}
 	
-	if sprite_index == spr_player_stop {
+	if sprite_index == spr_stop {
 		if image_index >= image_number - 1 {
 			image_index = 0;
-			sprite_index = spr_player_idle;
+			sprite_index = spr_idle;
 		}
 	}
-	else if sprite_index == spr_player_turn {
+	else if sprite_index == spr_turn {
 		if image_index >= image_number - 1
-			sprite_index = spr_player_mach2;
+			sprite_index = spr_mach2;
 	}
 	else if movespeed == 0
-		sprite_index = spr_player_idle;
+		sprite_index = spr_idle;
 	
 	if movespeed < 12
 		mach2 = 0;
 
 	if move != xscale && movespeed > 0 {
-		if sprite_index != spr_player_stopping {
+		if sprite_index != spr_stopping {
 			create_particle(x, y, spr_dashcloud, xscale);
 			if mach2 >= mach2_time {
 				audio_stop_sound(sfx_stop);
 				sound_play_3d(sfx_stop, x, y);
 			}
-			sprite_index = spr_player_stopping;
+			sprite_index = spr_stopping;
 		}
 		mach2 = 0;
 		
@@ -48,11 +48,11 @@ function scr_player_normal() {
 		if movespeed == 0 && move != 0 {
 			xscale = move;
 			image_index = 0;
-			sprite_index = spr_player_turn;
+			sprite_index = spr_turn;
 		}
 		else if movespeed == 0 {
 			image_index = 0;
-			sprite_index = spr_player_stop;
+			sprite_index = spr_stop;
 		}
 	}
 	else if move != 0 && !place_meeting(x + move, y, obj_solid) {
@@ -62,12 +62,12 @@ function scr_player_normal() {
 		}
 		
 		xscale = move;
-		if sprite_index != spr_player_mach1 && sprite_index != spr_player_mach2 && sprite_index != spr_player_mach3 && sprite_index != spr_player_runland && sprite_index != spr_player_turn {
+		if sprite_index != spr_mach1 && sprite_index != spr_mach2 && sprite_index != spr_mach3 && sprite_index != spr_runland && sprite_index != spr_turn {
 			image_index = 0;
-			sprite_index = spr_player_mach1;
+			sprite_index = spr_mach1;
 		}
-		if image_index >= image_number - 1 && (sprite_index == spr_player_mach1 || sprite_index == spr_player_runland or sprite_index == spr_player_turn)
-			sprite_index = spr_player_mach2;
+		if image_index >= image_number - 1 && (sprite_index == spr_mach1 || sprite_index == spr_runland || sprite_index == spr_turn)
+			sprite_index = spr_mach2;
 		
 		if mach2 < mach2_time && movespeed <= 12 {
 			if movespeed < 12
@@ -78,7 +78,7 @@ function scr_player_normal() {
 		else {
 			mach2 = mach2_time;
 			
-			sprite_index = spr_player_mach3;
+			sprite_index = spr_mach3;
 			if movespeed < 16
 				movespeed = Approach(movespeed, 16, 0.4);
 			else if movespeed < 19
@@ -105,7 +105,7 @@ function scr_player_normal() {
 		}
 		else if mach2 >= mach2_time {
 			sound_play_3d(sfx_highjump, x, y);
-			sprite_index = spr_player_glidejumpstart;
+			sprite_index = spr_glidejumpstart;
 			vsp = -16;
 			jumpclouds = 16;
 		}
@@ -114,24 +114,24 @@ function scr_player_normal() {
 			vsp = -14;
 			
 			if movespeed >= 12 {
-				sprite_index = spr_player_mach2jump;
+				sprite_index = spr_mach2jump;
 				jumpclouds = 10;
 			}
 			else
-				sprite_index = spr_player_jump;
+				sprite_index = spr_jump;
 		}
 	}
 	
 	if !grounded {
 		state = states.jump;
-		sprite_index = spr_player_fall;
+		sprite_index = spr_fall;
 	}
 	else if key_down {
 		sound_play_3d(sfx_slide, x, y);
 		movespeed = max(movespeed, 10);
 		
 		state = states.slide;
-		sprite_index = spr_player_crouchslip;
+		sprite_index = spr_crouchslip;
 	}
 		/*if keyboard_check(vk_f3)
 			idlespr = spr_playerJ;*/

@@ -30,29 +30,29 @@ function scr_player_bounce() {
 	}
 	else if movespeed < 10 {
 		var spd = 0.4;
-		if sprite_index == spr_player_backflip
+		if sprite_index == spr_backflip
 			spd = 0.2;
 		movespeed = Approach(movespeed, 10, spd);
 	}
 	
-	if sprite_index == spr_player_glidejump && vsp >= 0 {
+	if sprite_index == spr_glidejump && vsp >= 0 {
 		image_index = 0;
-		sprite_index = spr_player_glidefallstart;
+		sprite_index = spr_glidefallstart;
 	}
 	
 	if image_index >= image_number - 1 {
 		switch sprite_index {
-			case spr_player_jump:
-				sprite_index = spr_player_fall;
+			case spr_jump:
+				sprite_index = spr_fall;
 				break;
-			case spr_player_glidejumpstart:
-				sprite_index = spr_player_glidejump;
+			case spr_glidejumpstart:
+				sprite_index = spr_glidejump;
 				break;
-			case spr_player_glidefallstart:
-				sprite_index = spr_player_glidefall;
+			case spr_glidefallstart:
+				sprite_index = spr_glidefall;
 				break;
-			case spr_player_mach2jump:
-				sprite_index = spr_player_mach2fall;
+			case spr_mach2jump:
+				sprite_index = spr_mach2fall;
 				break;
 		}
 	}
@@ -63,7 +63,7 @@ function scr_player_bounce() {
 		
 		state = states.normal;
 		image_index = 0;
-		sprite_index = move != 0 ? spr_player_runland : spr_player_idle;
+		sprite_index = move != 0 ? spr_runland : spr_idle;
 	}
 	
 	if place_meeting(x + sign(hsp), y, obj_solid) && (!place_meeting(x + hsp, y, obj_destroyable) || movespeed <= 12)
@@ -74,7 +74,7 @@ function scr_player_bounce() {
 			sound_play_3d(sfx_wallslide, x, y);
 		
 			state = states.wallslide;
-			sprite_index = spr_player_wallslide;
+			sprite_index = spr_wallslide;
 			vsp = min(vsp, 0);
 		}
 	}
@@ -83,7 +83,7 @@ function scr_player_bounce() {
 		sound_play_3d(sfx_groundpound, x, y);
 		
 		state = states.slide;
-		sprite_index = spr_player_dive;
+		sprite_index = spr_dive;
 		vsp = 10;
 	}
 

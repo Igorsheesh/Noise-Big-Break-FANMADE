@@ -51,9 +51,9 @@ switch state {
 if grounded && state == states.normal {
 	if movespeed > 12
 		scr_set_machsnd(sfx_mach3);
-	else if sprite_index == spr_player_mach2
+	else if sprite_index == spr_mach2
 		scr_set_machsnd(sfx_mach2);
-	else if sprite_index == spr_player_mach1
+	else if sprite_index == spr_mach1
 		scr_set_machsnd(sfx_mach1);
 	else
 		scr_set_machsnd(noone);
