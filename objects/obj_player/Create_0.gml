@@ -58,3 +58,12 @@ jumpclouds = 0;
 /*if keyboard_check(vk_f7) {
 	// add here so debug blocks will be invisible
 }*/
+
+ini_open("saveData.ini");
+global.option_fullscreen = ini_read_real("Option", "fullscreen", 1);
+global.option_resolution = ini_read_real("Option", "resolution", 1);
+global.option_master_volume = ini_read_real("Option", "master_volume", 1);
+global.option_music_volume = ini_read_real("Option", "music_volume", 1);
+global.option_sfx_volume = ini_read_real("Option", "sfx_volume", 1);
+global.option_vibration = ini_read_real("Option", "vibration", 1);
+ini_close();

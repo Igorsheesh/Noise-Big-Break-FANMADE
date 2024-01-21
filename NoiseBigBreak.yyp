@@ -151,6 +151,7 @@
     {"id":{"name":"scr_player_normal","path":"scripts/scr_player_normal/scr_player_normal.yy",},},
     {"id":{"name":"spr_eggtrigger_placeholder","path":"sprites/spr_eggtrigger_placeholder/spr_eggtrigger_placeholder.yy",},},
     {"id":{"name":"GMLive_node","path":"scripts/GMLive_node/GMLive_node.yy",},},
+    {"id":{"name":"scr_screensizer","path":"scripts/scr_screensizer/scr_screensizer.yy",},},
     {"id":{"name":"beach_6","path":"rooms/beach_6/beach_6.yy",},},
     {"id":{"name":"spr_fuckedupslope","path":"sprites/spr_fuckedupslope/spr_fuckedupslope.yy",},},
     {"id":{"name":"spr_playerJ","path":"sprites/spr_playerJ/spr_playerJ.yy",},},

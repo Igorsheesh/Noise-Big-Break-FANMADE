@@ -104,6 +104,7 @@
     {"name":"scr_player_normal","order":1,"path":"scripts/scr_player_normal/scr_player_normal.yy",},
     {"name":"spr_eggtrigger_placeholder","order":2,"path":"sprites/spr_eggtrigger_placeholder/spr_eggtrigger_placeholder.yy",},
     {"name":"GMLive_node","order":2,"path":"scripts/GMLive_node/GMLive_node.yy",},
+    {"name":"scr_screensizer","order":10,"path":"scripts/scr_screensizer/scr_screensizer.yy",},
     {"name":"beach_6","order":5,"path":"rooms/beach_6/beach_6.yy",},
     {"name":"spr_fuckedupslope","order":10,"path":"sprites/spr_fuckedupslope/spr_fuckedupslope.yy",},
     {"name":"spr_player_crouchslip","order":12,"path":"sprites/spr_player_crouchslip/spr_player_crouchslip.yy",},
