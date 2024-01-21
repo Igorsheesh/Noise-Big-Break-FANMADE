@@ -1,12 +1,11 @@
 var cr = cr_default;
-if (device_mouse_x_to_gui(0) != mouse_xprevious || device_mouse_y_to_gui(0) != mouse_yprevious) && gameframe_mouse_in_window()
-{
+if (device_mouse_x_to_gui(0) != mouse_xprevious || device_mouse_y_to_gui(0) != mouse_yprevious) && gameframe_mouse_in_window() {
     disappearbuffer = 100;
     mouse_xprevious = device_mouse_x_to_gui(0);
     mouse_yprevious = device_mouse_y_to_gui(0);
 }
-if disappearbuffer > 0
-{
+
+if disappearbuffer > 0 {
     captionalpha = Approach(captionalpha, 1, 0.2);
     disappearbuffer--;
 }

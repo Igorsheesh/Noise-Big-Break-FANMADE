@@ -1,8 +1,7 @@
-live_auto_call;
+live_auto_call
 
 event_inherited();
-switch state
-{
+switch state {
 	case 1:
 		player.state = states.bounce;
 		player.sprite_index = spr_player_bounce;

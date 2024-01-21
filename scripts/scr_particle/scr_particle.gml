@@ -1,7 +1,5 @@
-function create_particle(x, y, sprite, xscale = 1)
-{
-	with obj_particlesystem
-	{
+function create_particle(x, y, sprite, xscale = 1) {
+	with obj_particlesystem {
 		array_push(particles, {
 			x: x,
 			y: y,

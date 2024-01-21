@@ -1,8 +1,7 @@
-live_auto_call;
+live_auto_call
 
 event_inherited();
-switch state
-{
+switch state {
 	case 1:
 		player.state = states.actor;
 		player.sprite_index = spr_player_mach1;
@@ -17,8 +16,7 @@ switch state
 		break;
 	
 	case 2:
-		if player.image_index >= player.image_number - 1
-		{
+		if player.image_index >= player.image_number - 1 {
 			player.mach2 = 50;
 			player.movespeed = 16;
 			player.state = states.normal;

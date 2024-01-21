@@ -1,5 +1,4 @@
-with other
-{
+with other {
 	targetRoom = other.targetRoom;
 	targetDoor = other.targetDoor;
 	

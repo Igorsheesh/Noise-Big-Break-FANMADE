@@ -12,4 +12,4 @@ mouse_yprevious = mouse_y;
 captionalpha = 0;
 disappearbuffer = 0;
 depth = -9999;
-var shell = instance_create_depth(0,0,0,obj_shell)
+var shell = instance_create_depth(0, 0, 0, obj_shell)

@@ -1,14 +1,12 @@
-live_auto_call;
+live_auto_call
 
 var target = obj_player;
 
-if instance_exists(target)
-{
+if instance_exists(target) {
 	var camx = target.x - CAMW / 2;
 	var camy = target.y - CAMH / 2;
 	
-	if target.object_index == obj_player
-	{
+	if target.object_index == obj_player {
 		chargecam = Approach(chargecam, target.movespeed * target.xscale * 4, 2);
 		if target.state == states.jump && target.mach2 >= mach2_time && target.vsp < 0
 			flycam = Approach(flycam, 100, 2);

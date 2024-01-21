@@ -2,8 +2,7 @@
 
 var ev_type = async_load[? "event_type"];
 
-if (ev_type == "DiscordReady")
-{
+if (ev_type == "DiscordReady") {
 	window_set_caption("We're ready!");
 	ready = true;
 	show_debug_message("date: " + string(date_current_datetime()));

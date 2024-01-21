@@ -1,5 +1,4 @@
-for(var i = 0; i < array_length(particles); i++)
-{
+for (var i = 0; i < array_length(particles); i++) {
 	var par = particles[i];
 	draw_sprite_ext(par.sprite, par.image_index, par.x, par.y, par.xscale, par.yscale, 0, c_white, 1);
 	
