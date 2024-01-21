@@ -3,6 +3,7 @@ function scr_characterspr() {
 	spr_dive = spr_player_dive;
 	spr_runland = spr_player_runland;
 	spr_longjump = spr_player_longjump;
+	spr_longjumpend = spr_player_longjumpend;
 	spr_wallslide = spr_player_wallslide;
 	spr_bounce = spr_player_bounce;
 	spr_stop = spr_player_stop;
@@ -29,6 +30,7 @@ function scr_characterspr() {
 			spr_dive = spr_player_dive;
 			spr_runland = spr_player_runland;
 			spr_longjump = spr_player_longjump;
+			spr_longjumpend = spr_player_longjumpend;
 			spr_wallslide = spr_player_wallslide;
 			spr_bounce = spr_player_bounce;
 			spr_stop = spr_player_stop;

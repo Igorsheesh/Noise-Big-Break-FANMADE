@@ -43,4 +43,11 @@ function scr_player_slide() {
 		sprite_index = spr_player_wallslide;
 	}
 	
+	if image_index >= image_number - 1 {
+		switch sprite_index {
+			case spr_longjump:
+				sprite_index = spr_longjumpend;
+				break;
+		}
+	}
 }

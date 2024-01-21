@@ -115,6 +115,28 @@ if spike && abs(distance_to_object(spike)) < 1 {
 //	else
 //		scr_hurtplayer();
 //}
+
+//Animation end stuff
+if image_index >= image_number - 1 {
+	switch sprite_index {
+		case spr_jump:
+			sprite_index = spr_fall;
+			break;
+		case spr_glidejumpstart:
+			sprite_index = spr_glidejump;
+			break;
+		case spr_glidefallstart:
+			sprite_index = spr_glidefall;
+			break;
+		case spr_mach2jump:
+			sprite_index = spr_mach2fall;
+			break;
+		case spr_longjump:
+			sprite_index = spr_longjumpend;
+			break;
+	}
+}
+
 // debug stuff :3
 if mouse_check_button_pressed(mb_left) { // makes player teleport to the spot where you click with left mouse button
 	x = mouse_x;
