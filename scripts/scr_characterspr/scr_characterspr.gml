@@ -48,6 +48,7 @@ function scr_characterspr() {
 			spr_glidefallstart = spr_player_glidefallstart;
 			spr_glidefall = spr_player_glidefall;
 			spr_mach2fall = spr_player_mach2fall;
+			spr_hurt = spr_player_hurt;
 			spr_mask = spr_player_mask;
 			break;
 	}
