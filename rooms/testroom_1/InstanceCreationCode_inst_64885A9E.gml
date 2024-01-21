@@ -1,0 +1,1 @@
+text = "Do not share the build/source code to others please\nit's really unfinished and buggy anyway"
