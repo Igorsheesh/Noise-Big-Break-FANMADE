@@ -1,0 +1,1 @@
+text = "Press B to go to Junk Beach\nPress O to go to Mr Orange test room!"
