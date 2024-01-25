@@ -50,11 +50,11 @@
     {"name":"placeholders","order":23,"path":"folders/Sprites/placeholders.yy",},
     {"name":"player","order":2,"path":"folders/Sprites/player.yy",},
     {"name":"Joke","order":26,"path":"folders/Sprites/player/Joke.yy",},
+    {"name":"mr. orange","order":28,"path":"folders/Sprites/player/mr. orange.yy",},
+    {"name":"noise","order":27,"path":"folders/Sprites/player/noise.yy",},
     {"name":"Tilesets","order":17,"path":"folders/Sprites/Tilesets.yy",},
     {"name":"Tile Sets","order":15,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":21,"path":"folders/Timelines.yy",},
-    {"name":"noise","order":27,"path":"folders/Sprites/player/noise.yy",},
-    {"name":"mr. orange","order":28,"path":"folders/Sprites/player/mr. orange.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_mammoncube","order":8,"path":"objects/obj_mammoncube/obj_mammoncube.yy",},

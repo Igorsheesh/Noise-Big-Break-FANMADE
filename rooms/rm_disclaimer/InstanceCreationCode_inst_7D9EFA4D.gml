@@ -1,1 +1,1 @@
-text = "This is an Works In Progress build!!!!!!\nMost of the things are subject to change\nand many bugs to fix! (alt thingy and smth)\n Report all of the bugs to me"
+text = "This is an Works In Progress build!!!!!!\nMost of the things are subject to change\nand many bugs to fix! (alt thingy and smth)\n Report all of the bugs to me";
