@@ -20,9 +20,9 @@ if key_jump
 if input_buffer_jump > 0
 	input_buffer_jump--;
 
-/*if character = "O" {
-	grav_mult = 0.5;
-}*/
+if character = "O" {
+	grav_mult = 2;
+}
 
 switch state {
 	case states.normal:
@@ -68,10 +68,12 @@ else
 if state != states.jump && state != states.normal
 	mach2 = 0;
 
-if state == states.wallslide || (state == states.jump && mach2 >= mach2_time && vsp < 0)
-	grav = 0.25;
-else
-	grav = 0.5;
+else {
+	if state == states.wallslide || (state == states.jump && mach2 >= mach2_time && vsp < 0)
+		grav = 0.25;
+	else
+		grav = 0.5;
+}
 
 // collide destructibles
 if state == states.bounce {
