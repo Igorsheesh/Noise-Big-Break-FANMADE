@@ -44,7 +44,11 @@ function scr_player_normal() {
 		}
 		mach2 = 0;
 		
-		movespeed = Approach(movespeed, 0, 0.7);
+		if obj_player.character = "O"
+			movespeed = Approach(movespeed, 0, 3);
+		else
+			movespeed = Approach(movespeed, 0, 0.7);
+			
 		if movespeed == 0 && move != 0 {
 			xscale = move;
 			image_index = 0;

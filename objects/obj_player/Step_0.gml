@@ -20,12 +20,18 @@ if key_jump
 if input_buffer_jump > 0
 	input_buffer_jump--;
 
+/*if character = "O" {
+	grav_mult = 0.5;
+}*/
+
 switch state {
 	case states.normal:
 		scr_player_normal();
 		break;
 	
 	case states.jump:
+//		scr_player_jump()
+//		break;
 	case states.bounce:
 		scr_player_bounce();
 		break;
@@ -62,7 +68,7 @@ else
 if state != states.jump && state != states.normal
 	mach2 = 0;
 
-if state == states.wallslide or (state == states.jump && mach2 >= mach2_time && vsp < 0)
+if state == states.wallslide || (state == states.jump && mach2 >= mach2_time && vsp < 0)
 	grav = 0.25;
 else
 	grav = 0.5;

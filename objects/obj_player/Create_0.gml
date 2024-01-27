@@ -12,6 +12,7 @@ enum states {
 }
 #macro mach2_time 30
 
+grav_mult = 1;
 key_left = false;
 key_right = false;
 key_up = false;

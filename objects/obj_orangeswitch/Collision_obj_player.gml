@@ -1,5 +1,4 @@
-with (other)
-{
+with (other) {
     if (character == "N")
         character = "O";
     else
