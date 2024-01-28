@@ -1,5 +1,6 @@
 function scr_player_normal() {
-	var idlespr = spr_idle
+	var _grav = grav;
+	var idlespr = spr_idle;
 	hsp = xscale * movespeed;
 	
 	if (place_meeting(x + sign(hsp), y, obj_solid) or scr_solid_slope(x + sign(hsp), y)) && (!place_meeting(x + hsp, y, obj_destroyable) || movespeed <= 12) {
@@ -112,6 +113,9 @@ function scr_player_normal() {
 			sprite_index = spr_glidejumpstart;
 			vsp = -16;
 			jumpclouds = 16;
+			if obj_player.character == "O" {
+				_grav = grav * grav_mult;
+			}
 		}
 		else {
 			sound_play_3d(sfx_jump, x, y);
@@ -139,4 +143,6 @@ function scr_player_normal() {
 	}
 		/*if keyboard_check(vk_f3)
 			idlespr = spr_playerJ;*/
+			
+	grav = _grav;
 }

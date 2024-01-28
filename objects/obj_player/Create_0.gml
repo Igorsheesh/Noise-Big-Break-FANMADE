@@ -8,7 +8,8 @@ enum states {
 	bounce,
 	actor,
 	hitstun,
-	dead
+	dead,
+	hook
 }
 #macro mach2_time 30
 
