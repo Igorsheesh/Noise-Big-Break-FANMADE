@@ -1,4 +1,4 @@
-if abs(distance_to_object(obj_player)) < 25
+if abs(distance_to_object(obj_player)) < 30
 	gotowardsplayer = true;
 
 if gotowardsplayer {

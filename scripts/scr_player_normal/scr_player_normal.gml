@@ -143,5 +143,6 @@ function scr_player_normal() {
 	}
 		/*if keyboard_check(vk_f3)
 			idlespr = spr_playerJ;*/
+			
 	grav = _grav;
 }

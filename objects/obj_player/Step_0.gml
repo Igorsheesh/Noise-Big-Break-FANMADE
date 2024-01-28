@@ -50,6 +50,10 @@ switch state {
 	case states.dead:
 		scr_playerreset();
 		break;
+		
+	case states.hook:
+		scr_player_hook();
+		break;
 }
 
 if grounded && state == states.normal {
