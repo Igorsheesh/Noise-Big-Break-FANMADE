@@ -1,4 +1,4 @@
-// Generated at 2023-01-28 15:35:56 (1293ms) for v2.3.7+
+// Generated at 2022-12-14 10:28:54 (1226ms) for v2.3.7+
 /// @lint nullToAny true
 // Feather disable all
 #region prototypes
@@ -830,7 +830,7 @@ function gameframe_caption_draw_caption_text_default(__x, __y, __width, __height
 		draw_set_font(__newFont);
 	} else __oldFont = -1;
 	draw_set_halign(gameframe_caption_text_align);
-	draw_set_valign(fa_top);
+	draw_set_valign(0);
 	var __alpha = draw_get_alpha();
 	var __textWidth = __right - __x;
 	draw_set_alpha((gameframe_alpha * gameframe_caption_alpha));

@@ -1,4 +1,4 @@
-if (other.character = "O" && (activated && other.state != states.hook && other.state != states.hurt)) {
+if (other.character == "O" && (activated && other.state != states.hook && other.state != states.hurt)) {
 	with obj_player {
 		hookstoredmovespeed = movespeed
 		hookstoredvsp = vsp

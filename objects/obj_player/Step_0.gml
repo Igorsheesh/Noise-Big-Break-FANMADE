@@ -20,7 +20,7 @@ if key_jump
 if input_buffer_jump > 0
 	input_buffer_jump--;
 
-if character = "O" {
+if character == "O" {
 	grav_mult = 2;
 }
 
@@ -106,6 +106,9 @@ else {
 	inv = 0;
 }
 
+if hp > 4
+	hp = 4;
+
 // spikes/enemies
 var spike = instance_nearest(x, y, obj_spike);
 var egg = instance_nearest(x,y,obj_enemy_egg)
@@ -119,7 +122,7 @@ if spike && abs(distance_to_object(spike)) < 1 {
 }
 /*
 if egg && abs(distance_to_object(egg)) < 1 {
-	if obj_player.movespeed = 16 {
+	if obj_player.movespeed == 16 {
 		vsp = -14;
 		grounded = false;
 	}
@@ -152,7 +155,7 @@ if image_index >= image_number - 1 {
 }
 
 // debug stuff :3
-if GM_build_type = "run"
+if GM_build_type == "run"
 {
 	if mouse_check_button_pressed(mb_left) { // makes player teleport to the spot where you click with left mouse button
 		x = mouse_x;
