@@ -12,7 +12,7 @@ enum states {
 	hook
 }
 #macro mach2_time 30
-global.debug = false
+
 grav_mult = 1;
 key_left = false;
 key_right = false;
@@ -68,6 +68,3 @@ global.option_music_volume = ini_read_real("Option", "music_volume", 1);
 global.option_sfx_volume = ini_read_real("Option", "sfx_volume", 1);
 global.option_vibration = ini_read_real("Option", "vibration", 1);
 ini_close();
-
-yy = 16
-timer = 0
