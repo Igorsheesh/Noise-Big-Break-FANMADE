@@ -9,7 +9,7 @@ if !keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) {
 key_left = -keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_up = keyboard_check(vk_up);
-key_down = keyboard_check(vk_down);
+key_down = keyboard_check_pressed(vk_down);
 key_down2 = keyboard_check_pressed(vk_down);
 key_jump = keyboard_check_pressed(ord("Z"));
 key_jump2 = keyboard_check(ord("Z"));
@@ -162,19 +162,8 @@ if GM_build_type == "run"
 		y = mouse_y;
 	}
 	
-	if keyboard_check(vk_f1) { // makes debug objects invisible
-		obj_solid.visible = false;
-		obj_slope.visible = false;
-		obj_fuckedupslope.visible = false;
-		obj_convexslope.visible = false;
-		obj_platform.visible = false;
-	}
-	if keyboard_check(vk_f2) { // makes debug objects visible
-		obj_solid.visible = true;
-		obj_slope.visible = true;
-		obj_fuckedupslope.visible = true;
-		obj_convexslope.visible = true;
-		obj_platform.visible = true;
+	if keyboard_check_pressed(vk_f1) { // makes debug objects invisible //bread talking: PRESSED YOU IDIOT! PRE-
+		global.debug = !global.debug
 	}
 	
 	if keyboard_check(vk_f4) //restarts game (self explanatory)
@@ -184,4 +173,51 @@ if GM_build_type == "run"
 
 	if keyboard_check(vk_f7) // gives 1 more HP
 		instance_create(x, y, obj_collect);
+	if !global.debug {
+		if instance_exists(obj_solid)
+		{
+			obj_solid.visible = false;
+		}
+		if instance_exists(obj_slope)
+		{
+			obj_slope.visible = false;
+		}
+		if instance_exists(obj_fuckedupslope)
+		{
+			obj_fuckedupslope.visible = false;
+		}
+		if instance_exists(obj_convexslope)
+		{
+			obj_convexslope.visible = false;
+		}
+		if instance_exists(obj_platform)
+		{
+			obj_platform.visible = false;
+		}
+	}
+	if global.debug {
+		if instance_exists(obj_solid)
+		{
+			obj_solid.visible = true;
+		}
+		if instance_exists(obj_slope)
+		{
+			obj_slope.visible = true;
+		}
+		if instance_exists(obj_fuckedupslope)
+		{
+			obj_fuckedupslope.visible = true;
+		}
+		if instance_exists(obj_convexslope)
+		{
+			obj_convexslope.visible = true;
+		}
+		if instance_exists(obj_platform)
+		{
+			obj_platform.visible = true;
+		}
+	} // i fucking hate you gamemaker
 }
+
+yy += (sin((timer * 0.3)) * 0.5)
+timer++
