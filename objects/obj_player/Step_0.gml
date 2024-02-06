@@ -149,7 +149,10 @@ if image_index >= image_number - 1 {
 			sprite_index = spr_longjumpend;
 			break;
 		case spr_backflip:
-			sprite_index = spr_fall;
+			sprite_index = spr_backflipend;
+			break;
+		case spr_crouchslipstart:
+			sprite_index = spr_crouchslip;
 			break;
 	}
 }

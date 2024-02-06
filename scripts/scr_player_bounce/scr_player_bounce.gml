@@ -25,7 +25,7 @@ function scr_player_bounce() {
 			spd = 0.1;
 		
 		movespeed = Approach(movespeed, 0, move == 0 ? 0.1 : 0.4);
-		if movespeed == 0 && move != 0
+		if movespeed == 0 && move != 0 && sprite_index != spr_backflip && sprite_index != spr_backflipend
 			xscale = move;
 	}
 	else if movespeed < 10 {

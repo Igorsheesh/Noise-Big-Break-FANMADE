@@ -139,7 +139,8 @@ function scr_player_normal() {
 		movespeed = max(movespeed, 10);
 		
 		state = states.slide;
-		sprite_index = spr_crouchslip;
+		image_index = 0;
+		sprite_index = spr_crouchslipstart;
 	}
 		/*if keyboard_check(vk_f3)
 			idlespr = spr_playerJ;*/

@@ -12,6 +12,7 @@ function scr_player_wallslide() {
 		state = states.normal;
 	}
 	vsp = min(vsp, 8);
+	sprite_index = vsp > 0 ? spr_player_wallslidefall : spr_player_wallslide;
 	
 	if !place_meeting(x + xscale, y, obj_solid) || move == -xscale {
 		sprite_index = spr_fall;
