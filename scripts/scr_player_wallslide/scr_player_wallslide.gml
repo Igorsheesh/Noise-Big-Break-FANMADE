@@ -1,4 +1,5 @@
 function scr_player_wallslide() {
+	move = 0;
 	movespeed = 0;
 	
 	if ++part_time >= 8 {
