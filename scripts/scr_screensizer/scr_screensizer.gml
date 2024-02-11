@@ -23,3 +23,33 @@ function get_options() {
 /*    screen_apply_fullscreen(global.option_fullscreen)
     obj_screensizer.start_sound = 0*/
 }
+
+function get_resolution_width(argument0, argument1 = res.wide)
+{
+    if (argument0 < c_black || argument0 >= array_length(global.resolutions[argument1]))
+        return get_resolution_width(1, argument1);
+    return global.resolutions[argument1][argument0][0];
+}
+
+function get_resolution_height(argument0, argument1 = res.wide)
+{
+    if (argument0 < c_black || argument0 >= array_length(global.resolutions[argument1]))
+        return get_resolution_height(1, argument1);
+    return global.resolutions[argument1][argument0][1];
+}
+
+function screen_apply_size()
+{
+    with (obj_screensizer)
+    {
+        if (global.option_resolution == 0)
+			global.option_resolution = 1
+        if (gameframe_get_fullscreen() == 0)
+            gameframe_restore()
+		var w = get_resolution_width(global.option_resolution, aspect_ratio)
+        var h = get_resolution_height(global.option_resolution, aspect_ratio)
+        trace("Setting Window Size: ", w, ", ", h)
+		window_set_size(w, h)
+        alarm[0] = 2
+    }
+}
