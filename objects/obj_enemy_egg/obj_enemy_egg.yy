@@ -4,6 +4,9 @@
   "name": "obj_enemy_egg",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,8 +15,8 @@
     "path": "folders/Objects/level structure/enemies.yy",
   },
   "parentObjectId": {
-    "name": "obj_mammoncube",
-    "path": "objects/obj_mammoncube/obj_mammoncube.yy",
+    "name": "obj_destroyable",
+    "path": "objects/obj_destroyable/obj_destroyable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

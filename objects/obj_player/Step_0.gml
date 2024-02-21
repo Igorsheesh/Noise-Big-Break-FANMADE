@@ -158,33 +158,12 @@ if image_index >= image_number - 1 {
 }
 
 // debug stuff :3
-if GM_build_type == "run"
-{
-	if mouse_check_button_pressed(mb_left) { // makes player teleport to the spot where you click with left mouse button
+// if GM_build_type == "run"
+
+	if mouse_check_button_pressed(mb_left){ // makes player teleport to the spot where you click with left mouse button
 		x = mouse_x;
 		y = mouse_y;
 	}
 	
-	if keyboard_check(vk_f1) { // makes debug objects invisible
-		obj_solid.visible = false;
-		obj_slope.visible = false;
-		obj_fuckedupslope.visible = false;
-		obj_convexslope.visible = false;
-		obj_platform.visible = false;
-	}
-	if keyboard_check(vk_f2) { // makes debug objects visible
-		obj_solid.visible = true;
-		obj_slope.visible = true;
-		obj_fuckedupslope.visible = true;
-		obj_convexslope.visible = true;
-		obj_platform.visible = true;
-	}
-	
 	if keyboard_check(vk_f4) //restarts game (self explanatory)
 		scr_playerreset();
-	if keyboard_check(vk_f6) // fullscreen
-		gameframe_get_fullscreen();
-
-	if keyboard_check(vk_f7) // gives 1 more HP
-		instance_create(x, y, obj_collect);
-}
