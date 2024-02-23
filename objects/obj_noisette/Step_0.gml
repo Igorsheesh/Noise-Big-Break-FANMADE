@@ -36,7 +36,14 @@ else
 
 // sprite
 if x != xprevious or y != yprevious
-	sprite_index = spr_noisette_move;
+{
+	if obj_player.sprite_index != spr_player_mach3 {
+		sprite_index = spr_noisette_move	//ill make her bigger next time.
+	}
+	else {
+		sprite_index = spr_noisette_run
+	}
+}
 else
 	sprite_index = spr_noisette_idle;
 
