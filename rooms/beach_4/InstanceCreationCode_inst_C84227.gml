@@ -1,2 +1,2 @@
 targetRoom = beach_3
-targetDoor = "X"
+targetDoor = "B"
